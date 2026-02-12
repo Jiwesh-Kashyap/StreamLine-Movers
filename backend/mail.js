@@ -18,6 +18,7 @@ const sendQuoteEmail = async (data) => {
     const mailOptions = {
         from: process.env.FROM_EMAIL, // Your verified sender identity
         to: process.env.TO_EMAIL,   // Where you want to receive the leads
+        cc: process.env.FROM_EMAIL,
         subject: `New Quote Request: ${fullName} - ${moveSize}`,
         html: `
             <h2>New Quote Request Received</h2>
@@ -43,7 +44,7 @@ const sendQuoteEmail = async (data) => {
         from: process.env.FROM_EMAIL,
         to: data.email,
         subject: "Confirmation email",
-        cc: process.env.TO_EMAIL,
+        cc: [process.env.TO_EMAIL, process.env.FROM_EMAIL],
         html:
             `<h3>Your details have been successfully sent to our team.</h3>
             <h4>

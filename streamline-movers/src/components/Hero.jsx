@@ -55,7 +55,7 @@ export default function Hero() {
 
                     <Button size="lg" variant="outline" className="text-base h-12 px-8 font-semibold w-full sm:w-auto bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm">
                         <Phone className="mr-2 h-5 w-5" />
-                        Call: 1-555-123-4567
+                        Call: 306-540-5626
                     </Button>
                 </div>
 

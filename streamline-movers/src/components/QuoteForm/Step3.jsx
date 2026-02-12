@@ -28,7 +28,7 @@ export default function Step3() {
                     </label>
                     <Input
                         type="tel"
-                        placeholder="555-123-4567"
+                        placeholder="306-540-5626"
                         {...register("phone")}
                         className={errors.phone ? "border-red-500" : ""}
                     />

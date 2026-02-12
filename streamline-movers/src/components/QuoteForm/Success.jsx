@@ -32,12 +32,12 @@ export default function Success() {
                     </ul>
                 </div>
 
-                <Button className="w-full mb-4">
+                <Button className="w-full mb-4" onClick={() => window.location.reload()}>
                     Return to Homepage
                 </Button>
 
                 <p className="text-sm text-slate-500 flex items-center justify-center gap-2">
-                    Questions? Call us now: <a href="tel:+15551234567" className="text-primary font-semibold hover:underline">1-555-123-4567</a>
+                    Questions? Call us now: <a href="tel:3065405626" className="text-primary font-semibold hover:underline">306-540-5626</a>
                 </p>
             </div>
         </section>

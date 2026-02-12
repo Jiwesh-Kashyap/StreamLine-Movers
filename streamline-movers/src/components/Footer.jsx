@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Phone, Mail, Instagram } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -35,10 +36,13 @@ export default function Footer() {
                     <h4 className="font-semibold text-white mb-4">Contact</h4>
                     <ul className="space-y-2 text-sm">
                         <li className="flex items-center gap-2">
-                            <span>📞</span> <a href="tel:+15551234567" className="hover:text-primary">1-555-123-4567</a>
+                            <Phone className="h-4 w-4 text-primary" /> <a href="tel:3065405626" className="hover:text-primary">306-540-5626</a>
                         </li>
                         <li className="flex items-center gap-2">
-                            <span>📧</span> <a href="mailto:info@streamlinemovers.ca" className="hover:text-primary">info@streamlinemovers.ca</a>
+                            <Mail className="h-4 w-4 text-primary" /> <a href="mailto:support@streamlinemovers.co" className="hover:text-primary">support@streamlinemovers.co</a>
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <Instagram className="h-4 w-4 text-primary" /> <a href="https://www.instagram.com/streamlinemoversregina/" target="_blank" rel="noopener noreferrer" className="hover:text-primary">@streamlinemoversregina</a>
                         </li>
                     </ul>
                 </div>

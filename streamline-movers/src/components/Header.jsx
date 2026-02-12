@@ -53,7 +53,7 @@ export default function Header() {
                 <div className="hidden md:flex items-center gap-4">
                     <div className="flex items-center gap-2 text-sm font-semibold">
                         <Phone className="h-4 w-4 text-primary" />
-                        <span>1-555-123-4567</span>
+                        <span>306-540-5626</span>
                     </div>
                     <ThemeToggle />
                     <Button onClick={(e) => handleScroll(e, "quote-form")}>Get Quote</Button>
@@ -61,7 +61,7 @@ export default function Header() {
 
                 {/* Mobile Actions */}
                 <div className="flex items-center gap-2 md:hidden">
-                    <a href="tel:+15551234567" aria-label="Call Now">
+                    <a href="tel:3065405626" aria-label="Call Now">
                         <Button size="icon" variant="outline" className="rounded-full">
                             <Phone className="h-4 w-4 text-primary" />
                         </Button>
