@@ -51,10 +51,12 @@ export default function Header() {
 
                 {/* Desktop CTA */}
                 <div className="hidden md:flex items-center gap-4">
-                    <div className="flex items-center gap-2 text-sm font-semibold">
-                        <Phone className="h-4 w-4 text-primary" />
-                        <span>306-540-5626</span>
-                    </div>
+                    <a href="tel:3065405626" aria-label="Call Us">
+                        <Button variant="outline" className="flex items-center gap-2 text-sm font-semibold">
+                            <Phone className="h-4 w-4" />
+                            <span>306-540-5626</span>
+                        </Button>
+                    </a>
                     <ThemeToggle />
                     <Button onClick={(e) => handleScroll(e, "quote-form")}>Get Quote</Button>
                 </div>

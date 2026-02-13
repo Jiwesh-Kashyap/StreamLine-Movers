@@ -49,7 +49,9 @@ const sendQuoteEmail = async (data) => {
         subject: "Confirmation email",
         cc: [process.env.TO_EMAIL, process.env.FROM_EMAIL],
         html:
-            `<h3>Your details have been successfully sent to our team.</h3>
+            `<h3>
+            Thank you for reaching out to us.\n
+            Your details have been successfully sent to our team.</h3>
             <h4>
                 <ul>
                     <li>Our specialist will call you within 2 hours.</li>

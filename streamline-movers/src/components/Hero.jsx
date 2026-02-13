@@ -53,10 +53,12 @@ export default function Hero() {
                         <MoveRight className="ml-2 h-5 w-5" />
                     </Button>
 
-                    <Button size="lg" variant="outline" className="text-base h-12 px-8 font-semibold w-full sm:w-auto bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm">
-                        <Phone className="mr-2 h-5 w-5" />
-                        Call: 306-540-5626
-                    </Button>
+                    <a href="tel:3065405626" className="w-full sm:w-auto">
+                        <Button size="lg" variant="outline" className="text-base h-12 px-8 font-semibold w-full bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm">
+                            <Phone className="mr-2 h-5 w-5" />
+                            Call: 306-540-5626
+                        </Button>
+                    </a>
                 </div>
 
                 <p className="mt-6 text-sm text-slate-400 dark:text-slate-500">
