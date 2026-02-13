@@ -60,7 +60,7 @@ export default function QuoteForm() {
         try {
             // allows you to send data to your separate backend
             // http://localhost:3001/api/quote
-            const response = await fetch('https://streamline-movers.onrender.com/api/quote', {
+            const response = await fetch('https://streamlinemovers.onrender.com/api/quote', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
