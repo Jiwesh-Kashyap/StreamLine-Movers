@@ -6,6 +6,14 @@ const { sendQuoteEmail } = require('./mail');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// DEBUG: Check API Key
+const apiKey = process.env.SENDGRID_API_KEY;
+console.log("--- STARTUP DEBUG ---");
+console.log("SENDGRID_API_KEY exists:", !!apiKey);
+console.log("SENDGRID_API_KEY length:", apiKey ? apiKey.length : 0);
+console.log("SENDGRID_API_KEY start:", apiKey ? apiKey.substring(0, 4) + "..." : "NONE");
+console.log("---------------------");
+
 // Middleware
 app.use(cors({
     origin: '*',
